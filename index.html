@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Recommender</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar-left">
+            <h2>Featured Cuisines</h2>
+            <img src="images/italian-cuisine.jpg" alt="Italian Cuisine">
+            <img src="images/mexican-cuisine.jpg" alt="Mexican Cuisine">
+            <img src="images/indian-cuisine.jpg" alt="Indian Cuisine">
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header>
+                <h1>Find Your Perfect Recipe</h1>
+            </header>
+            <div class="search-area">
+                <input type="text" id="ingredients" placeholder="Enter ingredients (e.g., chicken, garlic)">
+                <input type="text" id="cuisine" placeholder="Enter cuisine (e.g., Italian, Chinese)">
+                <button id="search-btn">Search Recipes</button>
+            </div>
+            <div id="recipes-container"></div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar-right">
+            <h2>Top Recipes</h2>
+            <img src="images/top-recipe-1.jpg" alt="Top Recipe 1">
+            <img src="images/top-recipe-2.jpg" alt="Top Recipe 2">
+            <img src="images/top-recipe-3.jpg" alt="Top Recipe 3">
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

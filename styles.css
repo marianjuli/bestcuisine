@@ -1,0 +1,175 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fff3e0; /* Light beige color */
+    color: #5b3923;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff3e0; /* Same light beige color as body */
+}
+
+.sidebar-left, .sidebar-right {
+    width: 20%;
+    padding: 20px;
+    background-color: #ffe4c4;
+    border-top: 8px solid #d2691e;
+    border-bottom: 8px solid #d2691e;
+}
+
+.sidebar-left {
+    border-right: 8px solid #d2691e;
+}
+
+.sidebar-right {
+    border-left: 8px solid #d2691e;
+}
+
+.sidebar-left h2, .sidebar-right h2 {
+    font-size: 1.5rem;
+    color: #d2691e;
+    text-align: center;
+}
+
+.sidebar-left img, .sidebar-right img {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.main-content {
+    width: 60%;
+    padding: 20px;
+    background-color:#fff3e0;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #d2691e;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.search-area {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.search-area input {
+    width: 40%;
+    padding: 10px;
+    border: 2px solid #d2691e;
+    border-radius: 5px;
+}
+
+.search-area button {
+    padding: 10px 20px;
+    background-color: #f5c64d;
+    border: 2px solid #d2691e;
+    border-radius: 5px;
+    color: #5b3923;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-area button:hover {
+    background-color: #f7a533;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recipe img {
+    width: 80%;
+    border-radius: 8px;
+    border: 4px solid #d2691e;
+}
+
+.recipe h3 {
+    font-size: 1.2rem;
+    color: #5b3923;
+    margin-top: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.recipe a {
+    text-decoration: none;
+    color: #d2691e;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .sidebar-left, .sidebar-right {
+        width: 100%;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-bottom: 8px solid #d2691e;
+        order: 2;
+        text-align: center;
+    }
+
+    .main-content {
+        width: 100%;
+        order: 1;
+    }
+
+    .search-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-area input {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .search-area button {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .recipe img {
+        width: 100%;
+    }
+
+    .recipe h3 {
+        font-size: 1rem;
+    }
+
+    .search-area input {
+        width: 90%;
+    }
+
+    .search-area button {
+        width: 80%;
+    }
+}
